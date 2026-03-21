@@ -1,0 +1,17 @@
+:root {
+// * neutral colors
+  --neutral-colors-10: #FFF;
+  --neutral-colors-20: #F5F5F5;
+  --neutral-colors-60: #18181d;
+  --neutral-colors-100: #1d1e25;
+
+// * container
+  --container-padding: 15px;
+  --container-width: 1200px;
+}
+
+[data-theme='dark'] {
+// * neutral colors
+  --neutral-colors-10: #1d1e25;
+  --neutral-colors-100: #fff;
+}
