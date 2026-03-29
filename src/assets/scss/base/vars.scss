@@ -1,56 +1,66 @@
 :root {
-// * neutral colors
-  --neutral-color-10: #FFF;
-  --neutral-color-20: #F5F5F5;
-  --neutral-color-30: #EDEDED;
-  --neutral-color-40: #CED1D8;
-  --neutral-color-50: #AFB3BB;
+  // * neutral colors
+  --neutral-color-10: #fff;
+  --neutral-color-20: #f5f5f5;
+  --neutral-color-30: #ededed;
+  --neutral-color-40: #ced1d8;
+  --neutral-color-50: #afb3bb;
   --neutral-color-60: #18181d;
   --neutral-color-70: #606060;
-  --neutral-color-80: #35373D;
-  --neutral-color-90: #161A34;
+  --neutral-color-80: #35373d;
+  --neutral-color-90: #161a34;
   --neutral-color-100: #1d1e25;
-  --neutral-color-110: #E2F8F0;
+  --neutral-color-110: #e2f8f0;
   --neutral-color-120: #828282;
   --neutral-color-130: #d9d9d9;
   --neutral-color-140: #000;
-  
+
   // * primary-colors
-  --primary-color-10: #2E8DFF;
-  --primary-color-20: #DFE0F3;
-  --primary-color-30: #1463FF;
+  --primary-color-10: #2e8dff;
+  --primary-color-20: #dfe0f3;
+  --primary-color-30: #1463ff;
   --primary-color-40: #085885;
   --primary-color-50: #4e7ddb;
 
   // * succes colors
-  --succes-color-40: #46B277;
-  
+  --succes-color-40: #46b277;
+  --succes-color-70: #e2f8f0cc;
+
   // * logo colors
-    --logo-color-text: #101010;
-    --logo-color-circle: #101010;
-  
-// * container
+  --logo-color-text: #101010;
+  --logo-color-circle: #101010;
+
+
+  // * container
   --container-padding: 15px;
   --container-width: 1200px;
 
-// * transition
-  --transition: .3s ease-in-out;
+    @include mobile {
+  --container-width: 480px;
+  }
 
-// * z-index
+  // * transition
+  --transition: 0.3s ease-in-out;
+
+  // * z-index
+  --z-index-minus-1: -1;
   --z-index-1: 1;
   --z-index-2: 2;
   --z-index-3: 3;
   --z-index-4: 4;
-
 }
+
 
 [data-theme='dark'] {
   // * neutral colors
   --neutral-color-10: #1d1e25;
-  --neutral-color-100: #FFF;
-  --neutral-color-140: #FFF;
+  --neutral-color-100: #fff;
+  --neutral-color-140: #fff;
 
   // * logo colors
-    --logo-color-text: #FFF;
-    --logo-color-circle: #343542;
+  --logo-color-text: #fff;
+  --logo-color-circle: #343542;
+
+  // * success colors
+  --succes-color-70: #d1d1d133;
 }

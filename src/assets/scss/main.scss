@@ -2,5 +2,8 @@
 @import './base';
 @import './globals';
 
-// components:
+// ! components:
 @import './components/header';
+
+// ? components for home page
+@import './components/home/hero'
