@@ -30,13 +30,21 @@
   --logo-color-text: #101010;
   --logo-color-circle: #101010;
 
+  // * overview color
+  --overview-bg-color: #1d1e25;
 
   // * container
   --container-padding: 15px;
   --container-width: 1200px;
 
-    @include mobile {
-  --container-width: 480px;
+  @include mini-desktop {
+    --container-width: 1000px;
+  }
+  @include tablet {
+    --container-width: 860px;
+  }
+  @include mobile {
+    --container-width: 480px;
   }
 
   // * transition
@@ -50,7 +58,6 @@
   --z-index-4: 4;
 }
 
-
 [data-theme='dark'] {
   // * neutral colors
   --neutral-color-10: #1d1e25;
@@ -63,4 +70,7 @@
 
   // * success colors
   --succes-color-70: #d1d1d133;
+
+  // * overview color
+  --overview-bg-color: #18181d;
 }
