@@ -8,11 +8,10 @@ export const useTheme = () => {
   themeTargetDataset.theme = theme;
 
   if (theme === 'dark') {
-    themeSwitcher.checked = true
+    themeSwitcher.checked = true;
   }
 
   themeSwitcher.addEventListener('click', () => {
-
     if (themeTargetDataset.theme === 'light') {
       themeTargetDataset.theme = 'dark';
       localStorage.setItem('theme', 'dark');

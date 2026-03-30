@@ -1,11 +1,10 @@
 @mixin burger {
-
   --burger-width: 28px;
   --burger-height: 22px;
   --burger-line-height: 3px;
 
   position: relative;
-  z-index:var(--z-index-3);
+  z-index: var(--z-index-3);
   display: none;
   width: var(--burger-width);
   height: var(--burger-height);
