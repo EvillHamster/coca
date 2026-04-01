@@ -4,8 +4,10 @@
 
 // ! components:
 @import './components/header';
+@import './components/partners';
 
 // ? components for home page
 @import './components/home/hero';
-@import './components/home/overview.scss';
-@import './components/home/features.scss';
+@import './components/home/overview';
+@import './components/home/features';
+@import './components/home/strength';
