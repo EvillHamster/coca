@@ -1,8 +1,9 @@
+// ! global setting style scss
 @import './mixins';
 @import './base';
 @import './globals';
 
-// ! components:
+// ! global components:
 @import './components/header';
 @import './components/partners';
 
@@ -11,3 +12,4 @@
 @import './components/home/overview';
 @import './components/home/features';
 @import './components/home/strength';
+@import './components/home/insight';
