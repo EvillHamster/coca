@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 export const UseInsightSlider = () => {
@@ -32,6 +33,20 @@ export const UseInsightSlider = () => {
       slideChangeTransitionEnd: function () {
         this.clickUserOnSlider?.classList.remove('is-hidden');
       },
+    },
+  });
+};
+
+export const UseTestimonialsSlider = () => {
+  new Swiper('.testimonials__slider', {
+    modules: [Navigation],
+    slidesPerView: 'auto',
+    spaceBetween: 22,
+    loop: true,
+
+    navigation: {
+      prevEl: '.testimonials__btn--prev',
+      nextEl: '.testimonials__btn--next',
     },
   });
 };

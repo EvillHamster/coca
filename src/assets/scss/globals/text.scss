@@ -1,6 +1,18 @@
 .heading {
   &-h1 {
     font-size: 72px;
+
+    @include tablet {
+      font-size: 56px;
+    }
+
+    @include mobile {
+      font-size: 40px;
+    }
+
+    @include smaill-mobile {
+      font-size: 34px;
+    }
   }
 
   &-h2 {
@@ -21,10 +33,26 @@
 
   &-h3 {
     font-size: 40px;
+
+    @include tablet {
+      font-size: 32px;
+    }
+
+    @include mobile {
+      font-size: 26px;
+    }
+
+    @include smaill-mobile {
+      font-size: 24px;
+    }
   }
 
   &-h4 {
     font-size: 36px;
+
+    @include mobile {
+      font-size: 24px;
+    }
   }
 
   &-h5 {
@@ -80,7 +108,7 @@
         display: inline-block;
         width: 76px;
         height: 1px;
-        background-color: var(--neutral-color-140);
+        background-color: var(--neutral-color-100);
         transform: translateY(-43px);
 
         @include mini-desktop {
@@ -91,6 +119,10 @@
 
     &-large {
       font-size: 24px;
+
+      @include mobile {
+        font-size: 18px;
+      }
     }
 
     &-medium {
