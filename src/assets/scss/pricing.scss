@@ -1,0 +1,11 @@
+// ! global setting style scss
+@import './mixins';
+@import './base';
+@import './globals';
+
+// ! global components:
+@import './components/header';
+@import './components/footer';
+
+// ? components for home page
+@import './components/pricing/hero';
