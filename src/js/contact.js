@@ -1,11 +1,9 @@
-import '../assets/scss/pricing.scss';
+import '../assets/scss/contact.scss';
 
 // ! components
 import { useTheme } from './components/theme.js';
 import { useBurger } from './components/burger.js';
-import { usePriceSwitcher } from './components/pricing/price-switcher.js';
 
 // ! activated functions
 useTheme();
 useBurger();
-usePriceSwitcher();
