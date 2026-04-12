@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+  padding: 105px 0 105px;
+
+  @include mini-desktop {
+    padding: 77px 0 77px;
+  }
+
+  &__title {
+    max-width: 959px;
+    font-weight: 700;
+    color: var(--neutral-color-100);
+    margin-bottom: 118px;
+
+    @include mini-desktop {
+      font-size: 80px;
+      margin-bottom: 74px;
+    }
+
+    @include tablet {
+      margin-bottom: 44px;
+      font-size: 60px;
+    }
+
+    @include mobile {
+      margin-bottom: 38px;
+      font-size: 48px;
+      text-align: center;
+    }
+
+    @include smaill-mobile {
+      margin-bottom: 30px;
+      font-size: 38px;
+    }
+  }
+
+  &__bot {
+    @include flex-all-between;
+    gap: 40px;
+  }
+  &__descr {
+    @include flex-align-center;
+    gap: 24px;
+    max-width: 738px;
+    font-weight: 600;
+    line-height: 131%;
+    letter-spacing: -0.03em;
+    color: var(--neutral-color-100);
+
+    @include mobile {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    @include smaill-mobile {
+      font-size: 20px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 349px;
+      height: 1px;
+      background-color: var(--neutral-color-100);
+      transform: translateY(-95px);
+
+      @include mini-desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__img {
+    width: 127px;
+    height: 127px;
+    fill: var(--neutral-color-100);
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
