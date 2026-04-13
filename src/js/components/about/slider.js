@@ -15,9 +15,7 @@ export const UseInsightSlider = () => {
 
     on: {
       init: function () {
-        this.clickUserOnSlider = document.querySelector(
-          '.slider__slider-btns',
-        );
+        this.clickUserOnSlider = document.querySelector('.slider__slider-btns');
         this.clickUserOnSlider?.classList.remove('is-hidden');
       },
       touchStart: function () {
