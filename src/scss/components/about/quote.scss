@@ -1,0 +1,85 @@
+.quote {
+  margin-bottom: 160px;
+
+  @include tablet {
+    margin-bottom: 100px;
+  }
+
+  @include mobile {
+    margin-bottom: 66px;
+  }
+
+  &__container {
+    @include flex-all-between;
+    gap: 50px;
+    max-width: 1200px;
+    border-top: 1px solid var(--neutral-color-30);
+    border-bottom: 1px solid var(--neutral-color-30);
+    padding: 80px 0;
+
+    @include tablet {
+      padding: 50px 0;
+    }
+
+    @include mobile {
+      padding: 30px 0;
+    }
+
+    @include mini-desktop {
+      flex-direction: column;
+      gap: 30px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    max-width: 480px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include mini-desktop {
+      font-size: 80px;
+      max-width: 992px;
+    }
+
+    @include tablet {
+      font-size: 60px;
+      max-width: 480px;
+    }
+
+    @include mobile {
+      font-size: 48px;
+    }
+
+    @include smaill-mobile {
+      font-size: 38px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 522px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--neutral-color-100);
+
+    @include mini-desktop {
+      font-size: 32px;
+      max-width: 992px;
+    }
+
+    @include tablet {
+      font-size: 28px;
+      max-width: 738px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+      max-width: 480px;
+    }
+
+    @include smaill-mobile {
+      font-size: 20px;
+    }
+  }
+}

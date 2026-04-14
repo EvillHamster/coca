@@ -3,8 +3,10 @@ import '/scss/about.scss';
 import { useTheme } from './components/theme.js';
 import { useBurger } from './components/burger.js';
 import { UseInsightSlider } from './components/about/slider.js';
+import { useOurTeamSlider } from './components/about/ourTeam-slider.js';
 
 // ! activated functions
 useTheme();
 useBurger();
 UseInsightSlider();
+useOurTeamSlider();
