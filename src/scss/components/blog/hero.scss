@@ -1,0 +1,232 @@
+.hero {
+  padding: 168px 0 95px;
+  @include mini-desktop {
+    padding: 100px 0 60px;
+  }
+
+  @include mini-desktop {
+    padding: 77px 0 60px;
+  }
+  &__title {
+    margin-bottom: 53px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--neutral-color-100);
+
+    @include mini-desktop {
+      font-size: 80px;
+    }
+
+    @include tablet {
+      font-size: 60px;
+    }
+
+    @include mobile {
+      text-align: center;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+    @include smaill-mobile {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__subtitle {
+    @include flex-justify-between;
+    gap: 24px;
+    margin-bottom: 128px;
+    max-width: 776px;
+    font-weight: 600;
+    line-height: 131%;
+    letter-spacing: -0.03em;
+    color: var(--neutral-color-100);
+
+    @include mini-desktop {
+      margin-bottom: 100px;
+    }
+    @include tablet {
+      margin-bottom: 80px;
+    }
+
+    @include mobile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 202px;
+      height: 1px;
+      background-color: var(--neutral-color-100);
+      transform: translateY(20px);
+
+      @include mini-desktop {
+        display: none;
+      }
+    }
+  }
+
+  &-categories {
+    &__nav {
+      &-list {
+        @include flex-align-center;
+        gap: 16px;
+        margin-bottom: 80px;
+
+        @include tablet {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          margin-bottom: 50px;
+        }
+
+        @include mobile {
+          margin-bottom: 40px;
+        }
+      }
+
+      &-link {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--neutral-color-150);
+        padding: 10px 14px;
+        transition: color var(--transition);
+
+        &:hover,
+        &--active {
+          color: var(--neutral-color-100);
+        }
+
+        &--active {
+          font-weight: 600;
+          color: var(--neutral-color-100);
+          border-bottom: solid 2px var(--neutral-color-100);
+        }
+      }
+    }
+  }
+
+  &__slider {
+      &-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 150px;
+      left: 44.1%;
+      z-index: var(--z-index-2);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      transform: translateX(-50%);
+      pointer-events: none;
+      opacity: 1;
+      transition:
+        opacity var(--transition),
+        transform var(--transition);
+
+        @include mini-desktop {
+          width: 80px;
+          height: 80px;
+          left: 53%;
+        }
+
+        @include tablet {
+          left: 100%;
+        }
+        @include small-tablet {
+          width: 70px;
+          height: 70px;
+        }
+
+        @include mobile {
+          width: 50px;
+          height: 50px;
+          top: 100px;
+        }
+
+      &.is-hidden {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.5);
+      }
+    }
+  }
+
+  &__article {
+    max-width: 515px;
+
+    @include mobile {
+      max-width: 570px;
+    }
+
+    &-img {
+      margin-bottom: 16px;
+
+      @include mobile {
+        margin-bottom: 8px;
+      }
+    }
+    &-head {
+      @include flex-all-between;
+      gap: 30px;
+      margin-bottom: 24px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+
+      @include mobile {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 15px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &-title {
+      margin-bottom: 16px;
+      font-weight: 700;
+      line-height: 125%;
+      letter-spacing: -0.03em;
+      color: var(--neutral-color-100);
+
+      @include mobile {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      & a {
+      }
+    }
+
+    &-descr {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    &-title,
+    &-descr {
+      max-width: 490px;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+}
