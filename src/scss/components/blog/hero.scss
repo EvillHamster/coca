@@ -112,7 +112,7 @@
   }
 
   &__slider {
-      &-btns {
+    &-btns {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -131,25 +131,25 @@
         opacity var(--transition),
         transform var(--transition);
 
-        @include mini-desktop {
-          width: 80px;
-          height: 80px;
-          left: 53%;
-        }
+      @include mini-desktop {
+        width: 80px;
+        height: 80px;
+        left: 53%;
+      }
 
-        @include tablet {
-          left: 100%;
-        }
-        @include small-tablet {
-          width: 70px;
-          height: 70px;
-        }
+      @include tablet {
+        left: 100%;
+      }
+      @include small-tablet {
+        width: 70px;
+        height: 70px;
+      }
 
-        @include mobile {
-          width: 50px;
-          height: 50px;
-          top: 100px;
-        }
+      @include mobile {
+        width: 50px;
+        height: 50px;
+        top: 100px;
+      }
 
       &.is-hidden {
         opacity: 0;

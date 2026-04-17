@@ -8,4 +8,3 @@ import { useBlogSliders } from './components/blog/heroSlider.js';
 useTheme();
 useBurger();
 useBlogSliders();
-

@@ -10,11 +10,11 @@ export const useOurTeamSlider = () => {
     loop: true,
     breakpoints: {
       768: {
-        slidesPerView: 2.5
+        slidesPerView: 2.5,
       },
       1200: {
         slidesPerView: 3,
-      }
+      },
     },
 
     on: {
