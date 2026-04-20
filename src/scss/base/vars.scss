@@ -38,6 +38,12 @@
   // * footer color
   --footer-bg-color: #1d1e25;
 
+  // * articles btns
+  --rect-color: #1d1e25;
+  --path-color: #fff;
+  --is-disabled-rect: #fff;
+  --is-disabled-path: #ced1d8;
+
   // * container
   --container-padding: 15px;
   --container-width: 1200px;
@@ -81,4 +87,10 @@
 
   // * footer color
   --footer-bg-color: #18181d;
+
+  // * articles btns
+  --rect-color: #ced1d8;
+  --path-color: #000;
+  --is-disabled-rect: #fff;
+  --is-disabled-path: #000;
 }

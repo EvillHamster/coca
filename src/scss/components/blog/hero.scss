@@ -206,6 +206,24 @@
       }
 
       & a {
+        text-decoration: none;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background-color: var(--neutral-color-100);
+          transition: width var(--transition);
+          transform: translateX(-50%);
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
 

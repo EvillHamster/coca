@@ -1,0 +1,138 @@
+.articles {
+  &__container {
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    @include mini-desktop {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
+    @include tablet {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    @include tablet {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    @include mobile {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    @include tablet {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__head {
+    @include flex-all-between;
+    margin-bottom: 80px;
+
+    @include mini-desktop {
+      margin-bottom: 60px;
+    }
+
+    @include small-tablet {
+      gap: 24px;
+      flex-direction: column;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    color: var(--neutral-color-100);
+
+    @include small-tablet {
+      margin-bottom: 10px;
+    }
+
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  &__descr {
+    max-width: 430px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--neutral-color-150);
+  }
+
+  &__btns {
+    @include flex-align-center;
+    gap: 16px;
+    margin-right: 50px;
+
+    @include small-tablet {
+      margin-right: 0;
+    }
+
+    &-prev,
+    &-next {
+      cursor: pointer;
+
+      & svg {
+        rect {
+          fill: var(--rect-color);
+        }
+
+        & path {
+          fill: var(--path-color);
+        }
+      }
+
+      &.is-disabled {
+        & svg {
+          rect {
+            fill: var(--is-disabled-rect);
+          }
+
+          & path {
+            fill: var(--is-disabled-path);
+          }
+        }
+      }
+    }
+  }
+
+  &__article {
+    padding-bottom: 20px;
+    max-width: 406px;
+
+    &-title {
+      margin: 24px 0 16px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      color: var(--neutral-color-100);
+
+      @include small-tablet {
+        margin: 13px 0 5px;
+      }
+    }
+
+    &-descr {
+      margin-bottom: 24px;
+      max-width: 343px;
+      font-weight: 500;
+      line-height: 32px;
+      color: var(--neutral-color-150);
+    }
+
+    &-link {
+      border: 1px solid #ced1d8;
+      border-radius: 100px;
+      padding: 16px 32px;
+      box-sizing: border-box;
+      color: var(--neutral-color-100);
+    }
+  }
+}
