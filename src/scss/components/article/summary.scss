@@ -1,0 +1,83 @@
+.summary {
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 56px;
+    max-width: 970px;
+
+    @include small-tablet {
+      padding-top: 65px;
+    }
+
+    @include mobile {
+      padding-top: 55px;
+      padding-bottom: 45px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--neutral-color-100);
+
+    @include smaill-mobile {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__user {
+    @include flex-all-between;
+    align-items: end;
+    margin-bottom: 24px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    &-info {
+      @include flex-align-center;
+      gap: 24px;
+    }
+
+    &-name {
+      margin-bottom: 4px;
+      font-weight: 600;
+      line-height: 26px;
+      color: var(--neutral-color-100);
+    }
+
+    &-position {
+      font-weight: 500;
+      line-height: 26px;
+      color: var(--neutral-color-150);
+    }
+
+    &-data {
+      font-weight: 500;
+      line-height: 150%;
+      color: var(--neutral-color-150);
+    }
+  }
+
+  &__descr {
+    margin-top: 80px;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--neutral-color-100);
+
+    @include tablet {
+      margin-top: 60px;
+    }
+
+    @include small-tablet {
+      margin-top: 50px;
+    }
+
+    @include smaill-mobile {
+      margin-top: 40px;
+    }
+  }
+}
